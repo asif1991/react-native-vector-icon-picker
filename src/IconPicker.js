@@ -14,6 +14,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
 
+
 const familyMap = {
     Ionicons,
     Entypo,
@@ -110,7 +111,10 @@ class IconPicker extends Component {
                     </View>
                 </Modal>
                 <TouchableOpacity onPress={() => this.setState({visible: true})}>
-                    <Text>Open picker</Text>
+                     <View style={styles.circle}>
+                    <AntDesign name="plus" size={30} color="#afb8bb" />
+                  </View>
+                  </TouchableOpacity>
                 </TouchableOpacity>
             </>
         );
